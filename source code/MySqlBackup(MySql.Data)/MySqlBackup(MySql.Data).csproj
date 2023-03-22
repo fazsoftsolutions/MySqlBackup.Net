@@ -1,10 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
+	<PropertyGroup>
+		<CurrentVersion>2.3.8</CurrentVersion>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	</PropertyGroup>
+	
   <PropertyGroup>
     <TargetFrameworks>net4</TargetFrameworks>
 	<RootNamespace>MySql.Data.Client</RootNamespace>
     <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
     <Nullable>disable</Nullable>
+    <AssemblyName>MySqlBackup.NET</AssemblyName>
     <PackageId>MySqlBackup.NET</PackageId>
     <Authors>adriancs</Authors>
     <Company>MySqlBackup.NET</Company>
@@ -14,14 +20,15 @@
     <PackageProjectUrl>https://github.com/MySqlBackupNET/MySqlBackup.Net</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/fazsoftsolutions/MySqlBackup.Net</RepositoryUrl>
-    <Version>2.3.8</Version>
-    <AssemblyVersion>2.3.8</AssemblyVersion>
-    <FileVersion>2.3.8</FileVersion>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <AssemblyName>MySqlBackup</AssemblyName>
+    <Version>$(CurrentVersion)</Version>
+    <AssemblyVersion>$(CurrentVersion)</AssemblyVersion>
+    <FileVersion>$(CurrentVersion)</FileVersion>
     <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
+    <Configurations>Debug;Release;Publish</Configurations>
   </PropertyGroup>
 
+  <Import Project="C:\Projetos\resources\Fazsoft\MSBuildImports\BuildOutputs.targets" />
+	
   <ItemGroup>
     <PackageReference Include="MySql.Data" Version="6.9.10" />
   </ItemGroup>
