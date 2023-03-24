@@ -10,14 +10,14 @@
 	<RootNamespace>MySql.Data.Client</RootNamespace>
     <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
     <Nullable>disable</Nullable>
-    <AssemblyName>MySqlBackup.NET</AssemblyName>
-    <PackageId>MySqlBackup.NET</PackageId>
-    <Authors>adriancs</Authors>
-    <Company>MySqlBackup.NET</Company>
-    <Product>MySqlBackup.NET</Product>
-    <Description>A tool to backup and restore MySQL database in C#/VB.NET/ASP.NET.</Description>
+    <AssemblyName>Fazsoft.MySqlBackup.NET</AssemblyName>
+    <PackageId>Fazsoft.MySqlBackup.NET</PackageId>
+    <Authors>adriancs, Fazsoft Solutions</Authors>
+    <Company>Fazsoft</Company>
+    <Product>Fazsoft.MySqlBackup.NET</Product>
+    <Description>Fazsoft version of a tool to backup and restore MySQL database in C#/VB.NET/ASP.NET.</Description>
     <Copyright>Public Domain</Copyright>
-    <PackageProjectUrl>https://github.com/MySqlBackupNET/MySqlBackup.Net</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/fazsoftsolutions/MySqlBackup.Net</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/fazsoftsolutions/MySqlBackup.Net</RepositoryUrl>
     <Version>$(CurrentVersion)</Version>
