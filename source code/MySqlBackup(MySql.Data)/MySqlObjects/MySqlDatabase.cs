@@ -106,12 +106,12 @@ namespace MySql.Data.MySqlClient
 
         public void Dispose()
         {
-            _listTable.Dispose();
-            _listProcedure.Dispose();
-            _listFunction.Dispose();
-            _listEvent.Dispose();
-            _listTrigger.Dispose();
-            _listView.Dispose();
+            _listTable?.Dispose();
+            _listProcedure?.Dispose();
+            _listFunction?.Dispose();
+            _listEvent?.Dispose();
+            _listTrigger?.Dispose();
+            _listView?.Dispose();
         }
     }
 }

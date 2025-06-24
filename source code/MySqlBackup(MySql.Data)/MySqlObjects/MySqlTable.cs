@@ -97,7 +97,7 @@ namespace MySql.Data.MySqlClient
 
         public void Dispose()
         {
-            _lst.Dispose();
+            _lst?.Dispose();
             _lst = null;
         }
     }

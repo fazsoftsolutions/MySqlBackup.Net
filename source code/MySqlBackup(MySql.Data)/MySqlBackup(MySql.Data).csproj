@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<CurrentVersion>2.3.8</CurrentVersion>
+		<CurrentVersion>2.3.9</CurrentVersion>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 	</PropertyGroup>
 	

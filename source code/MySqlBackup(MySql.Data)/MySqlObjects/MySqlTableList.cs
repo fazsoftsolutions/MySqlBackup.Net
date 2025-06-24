@@ -54,11 +54,7 @@ namespace MySql.Data.MySqlClient
 
         public void Dispose()
         {
-            foreach(var key in _lst.Keys)
-            {
-                _lst[key].Dispose();
-                _lst[key] = null;
-            }
+            _lst?.Clear();
             _lst = null;
         }
 
