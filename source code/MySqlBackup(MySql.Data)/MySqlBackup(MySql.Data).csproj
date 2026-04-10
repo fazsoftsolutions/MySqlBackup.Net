@@ -6,7 +6,7 @@
 	</PropertyGroup>
 	
   <PropertyGroup>
-    <TargetFrameworks>net4</TargetFrameworks>
+    <TargetFrameworks>net48</TargetFrameworks>
 	<RootNamespace>MySql.Data.Client</RootNamespace>
     <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
     <Nullable>disable</Nullable>
@@ -20,14 +20,17 @@
     <PackageProjectUrl>https://github.com/fazsoftsolutions/MySqlBackup.Net</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/fazsoftsolutions/MySqlBackup.Net</RepositoryUrl>
-    <Version>$(CurrentVersion)</Version>
-    <AssemblyVersion>$(CurrentVersion)</AssemblyVersion>
-    <FileVersion>$(CurrentVersion)</FileVersion>
+	<VersionPrefix>$(CurrentVersion)</VersionPrefix>
+	<VersionSuffix></VersionSuffix>
+	<Version>$(CurrentVersion)</Version>
+	<FileVersion>$(CurrentVersion)</FileVersion>
+	<AssemblyVersion>$(CurrentVersion)</AssemblyVersion>
     <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
     <Configurations>Debug;Release;Publish</Configurations>
   </PropertyGroup>
 
-  <Import Project="C:\Projetos\resources\Fazsoft\MSBuildImports\BuildOutputs.targets" />
+	<Import Project="..\..\Assembly.Outputs.targets" />
+	<Import Project="..\..\Assembly.Defaults.props" />
 	
   <ItemGroup>
     <PackageReference Include="MySql.Data" Version="6.9.10" />

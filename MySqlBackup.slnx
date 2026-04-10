@@ -1,0 +1,13 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Publish" />
+    <BuildType Name="Release" />
+  </Configurations>
+  <Folder Name="/build/">
+    <File Path="Assembly.Defaults.props" />
+    <File Path="Assembly.Outputs.targets" />
+    <File Path="Directory.Build.props" />
+  </Folder>
+  <Project Path="source code/MySqlBackup(MySql.Data)/MySqlBackup(MySql.Data).csproj" />
+</Solution>
