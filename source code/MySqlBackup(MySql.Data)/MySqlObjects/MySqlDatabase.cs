@@ -66,7 +66,7 @@ namespace MySql.Data.MySqlClient
         public void GetTotalRows(MySqlCommand cmd, GetTotalRowsMethod enumGetTotalRowsMode)
         {
             int i = 0;
-            var timer = new Timer
+            var timer = new System.Timers.Timer
             {
                 Interval = 10000
             };

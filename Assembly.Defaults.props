@@ -1,20 +1,14 @@
 ﻿<Project>
-  
-  <PropertyGroup>
-    <Title Condition="$(Title)==''">$(AssemblyName)</Title> 
-    <Product Condition="$(Product)==''">$(AssemblyName)</Product>
-  </PropertyGroup>
 
-   <ItemGroup>
-    <None Include="..\README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
+	<PropertyGroup>
+		<CurrentVersion>2.3.9</CurrentVersion>
+		<TargetFramework>net48</TargetFramework>
+	</PropertyGroup>
 
-    <None Include="$(RootFolder)\Resources\Fazsoft\Images\FazsoftLogo.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
+	<PropertyGroup>
+		<RootFolder>$([MSBuild]::NormalizePath($(MSBuildProjectDirectory),'..','..','..','..','..'))</RootFolder>
+		<PublisherFolder>$([MSBuild]::NormalizePath($(MSBuildProjectDirectory),'..','..', '..', 'Fazsoft.Publisher'))</PublisherFolder>
+		<ReadmeFolder>$([MSBuild]::NormalizePath($(MSBuildProjectDirectory),'..', '..'))</ReadmeFolder>
+	</PropertyGroup>
 
 </Project>
