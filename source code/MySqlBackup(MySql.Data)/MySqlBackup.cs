@@ -61,7 +61,7 @@ namespace MySql.Data.MySqlClient
         long _currentRowIndexInAllTable = 0;
         int _totalTables = 0;
         int _currentTableIndex = 0;
-        Timer timerReport = null;
+        System.Timers.Timer timerReport = null;
 
         long _currentBytes = 0L;
         long _totalBytes = 0L;
@@ -129,7 +129,7 @@ namespace MySql.Data.MySqlClient
             //AppDomain.CurrentDomain.AssemblyResolve += CurrentDomain_AssemblyResolve;
             _database.GetTotalRowsProgressChanged += _database_GetTotalRowsProgressChanged;
 
-            timerReport = new Timer();
+            timerReport = new System.Timers.Timer();
             timerReport.Elapsed += timerReport_Elapsed;
 
             //textEncoding = new UTF8Encoding(false);

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 
 namespace MySql.Data.MySqlClient
 {
@@ -74,10 +75,7 @@ namespace MySql.Data.MySqlClient
 
         public void Dispose()
         {
-            foreach (var key in _lst.Keys)
-            {
-                _lst[key] = null;
-            }
+            _lst?.Clear();
             _lst = null;
         }
     }

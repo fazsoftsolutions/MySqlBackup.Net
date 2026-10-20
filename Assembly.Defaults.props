@@ -1,0 +1,14 @@
+﻿<Project>
+
+	<PropertyGroup>
+		<CurrentVersion>2.3.9</CurrentVersion>
+		<TargetFramework>net48</TargetFramework>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<RootFolder>$([MSBuild]::NormalizePath($(MSBuildProjectDirectory),'..','..','..','..','..'))</RootFolder>
+		<PublisherFolder>$([MSBuild]::NormalizePath($(MSBuildProjectDirectory),'..','..', '..', 'Fazsoft.Publisher'))</PublisherFolder>
+		<ReadmeFolder>$([MSBuild]::NormalizePath($(MSBuildProjectDirectory),'..', '..'))</ReadmeFolder>
+	</PropertyGroup>
+
+</Project>

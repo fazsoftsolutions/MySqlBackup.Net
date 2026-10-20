@@ -1,0 +1,14 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Publish" />
+    <BuildType Name="Release" />
+  </Configurations>
+  <Folder Name="/build/">
+    <File Path="..\Fazsoft.Publisher\MSBuild\Products.Outputs.Nuget.targets" />
+    <File Path="..\Fazsoft.Publisher\MSBuild\Products.Props.Common.props" />
+    <File Path="..\Fazsoft.Publisher\MSBuild\Products.Props.Nuget.props" />
+    <File Path="Assembly.Defaults.props" />
+  </Folder>
+  <Project Path="source code/MySqlBackup(MySql.Data)/MySqlBackup(MySql.Data).csproj" />
+</Solution>
